@@ -13,6 +13,7 @@ class _ProfilePageState extends State<ProfilePage> {
   final List<Map<String, String>> teamMembers = [
     {'Nama': 'Okfan Subekti', 'NIM': '21120123120008'},
     {'Nama': 'Aulia Putri Farkhan', 'NIM': '21120123140158'},
+    {'Nama': 'Mohammad Ikliel Hubban Ifthor Mubarok', 'NIM': '21120122130081'},
   ];
 
   @override
@@ -40,8 +41,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   image: const DecorationImage(
                     fit: BoxFit.cover,
                     alignment: Alignment.topCenter,
-                      image: AssetImage(
-                        'assets/foto.png',
+                    image: NetworkImage(
+                      'https://raw.githubusercontent.com/okfn05/PRAK-PPBMOD3/5de7840d497973c23e82bda91086da7b7a75b626/bg.png',
                     ),
                   ),
                   color: const Color.fromARGB(255, 255, 252, 252).withValues(alpha: 128),
@@ -60,8 +61,8 @@ class _ProfilePageState extends State<ProfilePage> {
                     shape: BoxShape.circle,
                     image: DecorationImage(
                       fit: BoxFit.cover,
-                        image: AssetImage(
-                          'assets/foto.png',
+                      image: NetworkImage(
+                        'https://raw.githubusercontent.com/okfn05/PRAK-PPBMOD3/5de7840d497973c23e82bda91086da7b7a75b626/foto.png',
                       ),
                     ),
                   ),
